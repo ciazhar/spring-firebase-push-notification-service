@@ -2,6 +2,7 @@ buildscript {
 	ext {
 		kotlinVersion = '1.1.51'
 		springBootVersion = '2.0.0.M5'
+		jsonVersion = '20160810'
 	}
 	repositories {
 		mavenCentral()
@@ -42,6 +43,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-webflux')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+	compile("org.json:json:${jsonVersion}")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
 }
